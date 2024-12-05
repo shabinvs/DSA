@@ -23,9 +23,11 @@ int main()
 			}
 		}
 
-		int temp = arr[sort];
-		arr[sort] = arr[i];
-		arr[i] = temp;
+		if(sort != i) {
+			int temp = arr[sort];
+			arr[sort] = arr[i];
+			arr[i] = temp;
+		}
 	}
 
 	printf("After sorting: ");
